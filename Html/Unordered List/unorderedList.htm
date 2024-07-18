@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Nested Unordered List - Fruits</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        #main-container {
+            width: 60%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .list-title {
+            text-align: center;
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .nested-list {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        .nested-list .nested-list {
+            list-style-type: circle;
+            color: #007bff; /* First nested level */
+        }
+        .nested-list .nested-list .nested-list {
+            list-style-type: square;
+            color: #28a745; /* Second nested level */
+        }
+        .list-item {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main-container">
+        <h1 class="list-title">Types of Fruits</h1>
+        <ul class="nested-list">
+            <li class="list-item">Fruits
+                <ul class="nested-list">
+                    <li class="list-item">Apples
+                        <ul class="nested-list">
+                            <li class="list-item">Red Delicious</li>
+                            <li class="list-item">Granny Smith</li>
+                            <li class="list-item">Fuji</li>
+                        </ul>
+                    </li>
+                    <li class="list-item">Oranges
+                        <ul class="nested-list">
+                            <li class="list-item">Navel</li>
+                            <li class="list-item">Valencia</li>
+                            <li class="list-item">Blood Orange</li>
+                        </ul>
+                    </li>
+                    <li class="list-item">Berries
+                        <ul class="nested-list">
+                            <li class="list-item">Strawberries</li>
+                            <li class="list-item">Blueberries</li>
+                            <li class="list-item">Raspberries</li>
+                        </ul>
+                    </li>
+                    <li class="list-item">Bananas</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
